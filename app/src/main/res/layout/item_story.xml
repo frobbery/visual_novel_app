@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/cover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            tools:src="@tools:sample/backgrounds/scenic"
+            android:contentDescription="@string/story_cover" />
+
+        <ImageView
+            android:id="@+id/play_container"
+            android:visibility="invisible"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:src="@drawable/play_button"
+            app:layout_constraintBottom_toBottomOf="@+id/cover"
+            app:layout_constraintStart_toStartOf="@id/cover"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_number"
+            app:layout_constraintEnd_toStartOf="@id/refresh_container"
+            android:contentDescription="@string/play_container" />
+
+        <ImageView
+            android:id="@+id/resume_container"
+            android:visibility="visible"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:src="@drawable/empty_button"
+            app:layout_constraintBottom_toBottomOf="@+id/cover"
+            app:layout_constraintStart_toStartOf="@id/cover"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_number"
+            app:layout_constraintEnd_toStartOf="@id/refresh_container"
+            android:contentDescription="@string/resume_container" />
+
+        <TextView
+            android:id="@+id/chapter_number"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="100dp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:text="@string/chapter_plug"
+            android:textColor="@color/white"
+            android:textSize="40sp"
+            app:layout_constraintBottom_toBottomOf="@+id/cover"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/ticket_number"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed-light"
+            android:text="@string/ticket_number"
+            android:textColor="@color/white"
+            android:textSize="40sp"
+            app:layout_constraintBottom_toBottomOf="@id/play_container"
+            app:layout_constraintStart_toStartOf="@+id/play_container"
+            android:layout_marginStart="15dp"
+            android:layout_marginBottom="1dp"
+            app:layout_constraintTop_toTopOf="@id/play_container"/>
+
+
+        <TextView
+            android:id="@+id/play"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed-light"
+            android:text="@string/play"
+            android:textColor="@color/white"
+            android:layout_marginEnd="20dp"
+            android:textSize="40sp"
+            android:layout_marginBottom="1dp"
+            app:layout_constraintBottom_toBottomOf="@+id/play_container"
+            app:layout_constraintEnd_toEndOf="@+id/play_container"
+            app:layout_constraintTop_toTopOf="@+id/play_container" />
+
+        <TextView
+            android:id="@+id/resume"
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed-light"
+            android:text="@string/resume"
+            android:textColor="@color/white"
+            android:textSize="40sp"
+            android:layout_marginBottom="1dp"
+            app:layout_constraintStart_toStartOf="@id/resume_container"
+            app:layout_constraintBottom_toBottomOf="@+id/resume_container"
+            app:layout_constraintEnd_toEndOf="@+id/resume_container"
+            app:layout_constraintTop_toTopOf="@+id/resume_container" />
+
+        <ImageView
+            android:id="@+id/refresh_container"
+            android:src="@drawable/refresh_button"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            app:layout_constraintBottom_toBottomOf="@+id/cover"
+            app:layout_constraintStart_toEndOf="@id/play_container"
+            app:layout_constraintEnd_toEndOf="@id/cover"
+            app:layout_constraintTop_toBottomOf="@+id/chapter_number"
+            android:contentDescription="@string/restart_button" />
+
+        <TextView
+            android:id="@+id/available"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed-light"
+            android:text="@string/availability_plug"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_margin="10dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

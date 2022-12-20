@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Course project</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="log">log</string>
+    <string name="ticket_container">ticket_container</string>
+    <string name="default_ticket_number">3</string>
+    <string name="default_diamond_number">30</string>
+    <string name="diamond_container">diamond_container</string>
+    <string name="settings_container">settings_container</string>
+    <string name="background">background</string>
+    <string name="message_border">message border</string>
+    <string name="message_plug">New chapters of\n this story will be\n available soon!</string>
+    <string name="back_button">back_button</string>
+    <string name="empty_button">empty_button</string>
+    <string name="first_choice_plug">first choice text</string>
+    <string name="second_choice_plug">second choice text</string>
+    <string name="main_character">main character</string>
+    <string name="character">character</string>
+    <string name="dialog">dialog</string>
+    <string name="small_empty_button">small empty button</string>
+    <string name="name_plug">Name</string>
+    <string name="name_container">name container</string>
+    <string name="the_end">THE END!</string>
+    <string name="story_cover">story cover</string>
+    <string name="play_container">play container</string>
+    <string name="resume_container">resume container</string>
+    <string name="chapter_plug">CHAPTER 1</string>
+    <string name="ticket_number">1</string>
+    <string name="play">PLAY</string>
+    <string name="resume">RESUME</string>
+    <string name="restart_button">restart button</string>
+    <string name="availability_plug">AVAILABLE FOR PLAYING</string>
+    <string name="restart_sentence">What do you want to restart?</string>
+    <string name="restart_chapter_button">restart chapter button</string>
+    <string name="chapter">CHAPTER</string>
+    <string name="restart_story_button">restart story button</string>
+    <string name="story">STORY</string>
+    <string name="close_button">close button</string>
+    <string name="i_m_good">I\'M GOOD</string>
+</resources>
